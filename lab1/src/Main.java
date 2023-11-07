@@ -8,7 +8,6 @@ public class Main {
         int size = scanner.nextInt();
 
         int[] array = new int[size];
-
         System.out.println("Введите элементы массива:");
 
         for (int i = 0; i < size; i++) {
