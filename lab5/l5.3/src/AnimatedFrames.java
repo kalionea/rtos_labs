@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 public class AnimatedFrames extends JFrame {
     private BufferedImage[] frames;
     private int currentFrame = 0;
-    private static final int TOTAL_FRAMES = 16; // change this according to the number of frames you have
+    private static final int TOTAL_FRAMES = 16;
 
     public AnimatedFrames() {
         frames = new BufferedImage[TOTAL_FRAMES];
@@ -26,7 +26,7 @@ public class AnimatedFrames extends JFrame {
         setVisible(true);
 
 
-        Timer timer = new Timer(80, e -> {
+        Timer timer = new Timer(40, e -> {
             currentFrame++;
             if (currentFrame >= TOTAL_FRAMES) {
                 currentFrame = 0;

@@ -13,7 +13,7 @@ public class Main {
                 new Book("Book: Forrest Gump"),
                 new Book("Book: One Flew over the Cuckoo's Nest")
         };
-
+        Magazine.printMagazines(books);
         Magazine.printMagazines(magazines);
         Book.printBooks(books);
     }
